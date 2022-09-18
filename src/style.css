@@ -1,0 +1,348 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Tajawal:wght@300;400;700&display=swap');
+
+
+/* Resrt CSS Values */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Tajawal', sans-serif;
+}
+
+
+nav {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1166px;
+    margin: 0 auto;
+    padding: 0.8rem 5rem;
+}
+
+nav .logo {
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+}
+
+nav .logo i {
+    color: yellowgreen;
+    padding-left: 0.75rem;
+}
+
+nav .logo h4 {
+    font-family:'Lalezar', cursive;
+    letter-spacing: 2px;
+}
+
+nav .nav-items {
+    display: flex;
+    list-style: none;
+}
+
+nav .nav-items .nav-item {
+    padding: 0 1rem;
+}
+
+nav .nav-link {
+    text-decoration: none;
+    color: #4e547e;
+}
+
+nav .nav-link:hover {
+    color: yellowgreen;
+}
+
+.hero {
+    height: calc(100vh - 100px);
+    background-color: aliceblue;
+    display: grid;
+    place-items: center;
+}
+
+.hero .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1166px;
+    margin: 0 auto;
+    padding: 0.8rem 5rem;
+}
+
+.hero-right h4 {
+    color: yellowgreen;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.hero-right h1 {
+    word-spacing: 3px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.hero-right p {
+    margin-bottom: 2rem;
+}
+
+.hero-right span {
+    color: yellowgreen;
+}
+
+.hero-right a {
+    background-color: yellowgreen;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 25px;
+}
+
+.hero-right a:hover {
+    background-color: greenyellow;
+}
+
+
+.services {
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.services-txt {
+    font-size: 2rem;
+}
+
+.cards {
+    margin: 0 auto;
+    padding: 0.8rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.cards .card {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    text-align: center;
+    padding: 1rem 2rem;
+    margin: 0 10px;
+    background-color: aliceblue;
+    line-height: 30px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgb(223, 218, 218);
+    transition: .5s ease;
+}
+
+.cards .card:hover {
+    transform: scale(1.1);
+}
+
+.card .fa-solid {
+    color: yellowgreen;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.mobile {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mobiles {
+    margin: 0 auto;
+    padding: 0.8rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: flex-start;
+    margin-top: 3rem; 
+}
+
+.mobiles img {
+    width: 300px;
+    padding: 2rem;
+    opacity: 0.7;
+    transition: .5s ease;
+}
+
+.mobiles img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: hsl(216, 45%, 90%, 50%);
+}
+
+.footer-txt {
+    color: yellowgreen;
+    margin: 10px 0;
+}
+
+.social {
+    font-size: 20px;
+    margin-top: 0 10px;
+}
+
+.social i {
+    padding: 5px;
+    transition: .5s ease;
+    color: rgb(12, 12, 44);
+}
+
+.social i:hover {
+    color: rgb(48, 48, 199);
+}
+
+.arrow-up {
+    font-size: 30px;
+    color: yellowgreen;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    /* display: none; */
+    cursor: pointer;
+
+}
+
+.barre {
+    font-size: 30px;
+    color: yellowgreen;
+    display: none;
+}
+
+
+@media (max-width: 1078px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+    }
+    .nav-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-content {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: calc(100vh);
+    }
+    .hero-right h4 {
+        font-size: 2rem;
+    }
+
+    .left img {
+        width: 80px;
+    }
+
+    .services {
+        height: 1100px;
+    }
+
+    .cards {
+        margin: 0 auto;
+        padding: 0.8rem 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    
+    .cards .card {
+        width: 400px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem 2rem;
+        margin: 10px 10px;
+        background-color: aliceblue;
+        line-height: 30px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px rgb(223, 218, 218);
+        transition: .5s ease;
+    }
+
+    .mobile {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .mobiles {
+        margin: 0 auto;
+        padding: 0.8rem 5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: flex-start;
+        margin-top: 3rem; 
+    }
+
+    .mobiles img {
+        width: 200px;
+        padding: 2rem;
+        opacity: 0.7;
+        transition: .5s ease;
+    }
+
+    .left img {
+        margin-left: 20px;
+        transition: .5s ease;
+    }
+
+    .left img:hover {
+        transform: scale(1.1);
+    }
+}
+
+
+@media (max-width: 600px) {
+    .barre {
+        display: block;
+        font-size: 50px;
+        margin-top: -20px;
+        cursor: pointer;
+    }
+
+    .nav-items {
+        background: hsl(216, 45%, 90%, 50%);
+        position: absolute;
+        top: 70px;
+        left: 80px;
+        visibility: hidden;
+    }
+
+
+    .nav-items.active {
+        visibility: visible;
+    }
+}
